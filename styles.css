@@ -1,0 +1,383 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+*::after,*::before{
+  box-sizing: border-box;
+}
+input,button{
+  font-family: inherit;
+}
+img{
+  display: block;
+}
+
+.header{
+  background-image: url('images/desktop/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+ height: 100vh
+}
+.header img{
+  display: inline-block;
+}
+.header .menu{
+  display: none;
+}
+.header h2{
+  color: White;
+  font-family: 'Fraunces', serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  letter-spacing: 0.8rem;
+}
+.header div{
+  display: flex;
+  justify-content: space-between;
+}
+.header div div{
+  display: flex;
+  grid-gap: 20px;
+  align-items: center;
+}
+.header div div a{
+  color: White;
+  font-family: 'Barlow', sans-serif;
+  text-decoration: none;
+}
+.header div div a:last-child{
+  padding: 0.64rem 0.64rem;
+  border-radius: 45%;
+  background-color:white;
+  color: hsl(168, 44%, 61%);
+}
+.header div div a:last-child:hover{
+  background-color: hsl(168, 44%, 61%);
+  color: white;
+}
+
+.section1{
+  display: flex;
+}
+.section1 div:first-child{
+  padding: 9rem 0 9rem 3rem;
+flex: 1;
+}
+.section1 div:first-child h3{
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+width: 50%;
+color: hsl(213, 9%, 39%);
+margin-bottom: 20px;
+}
+.section1 div:first-child p{
+  color: hsl(232, 10%, 55%);
+  font-family: 'Barlow', sans-serif;
+  width: 60%;
+  margin-bottom: 20px;
+}
+.section1 div:last-child{
+  background-image: url('images/desktop/image-transform.jpg');
+  flex: 1;
+  background-position: center;
+  padding-right: 3rem;
+}
+.section2{
+  display: flex;
+}
+.section2 div{
+  flex: 1;
+}
+.section2 div:first-child{
+  background-image: url('images/desktop/image-stand-out.jpg');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  padding-left: 5rem;
+
+}
+.section2 div:last-child{
+padding: 9rem 0 9rem 5rem;
+}
+.section2 div:last-child h3{
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+width: 70%;
+color: hsl(213, 9%, 39%);
+margin-bottom: 20px;
+}
+.section2 a{
+  width: 100px;
+  color: black;
+  font-family: 'Fraunces', serif;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 10%;
+  padding: 0.6rem 0.6rem;
+  background-color: hsl(7, 99%, 80%);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.section2 a:hover{
+  background-color:hsl(7, 99%, 70%);
+}
+.section2 div:last-child p{
+  color: hsl(232, 10%, 55%);
+  font-family: 'Barlow', sans-serif;
+  width: 60%;
+  margin-bottom: 20px;
+}
+.section3{
+  display: flex;
+  text-align: center;
+}
+.section1 a{
+  width: 100px;
+  color: black;
+  font-family: 'Fraunces', serif;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 10%;
+  padding: 0.6rem 0.6rem;
+  background-color: hsl(51, 100%, 59%);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.section1 a:hover{
+  background-color:hsl(51, 100%, 49%);
+}
+.section3 div{
+  flex: 1;
+}
+.section3 div:first-child{
+  background-image: url('images/desktop/image-graphic-design.jpg');
+  background-size: cover;
+  background-position: top;
+  padding: 9rem 0 2rem 2rem;
+}
+.section3 div:last-child{
+  background-image: url('images/desktop/image-photography.jpg');
+  background-size: cover;
+  background-position: top;
+  padding: 9rem 0 2rem 2rem;
+}
+.section3 h4{
+color:  hsl(167, 40%, 24%);
+font-family: 'Fraunces', serif;
+margin: 250px auto 0 auto;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.section3 p{
+color: hsl(167, 40%, 24%);
+  font-family: 'Barlow', sans-serif;
+  width: 50%;
+  margin: 15px auto 0 auto;
+}
+.section4{
+  padding: 5rem 5rem;
+  text-align: center;
+}
+.section4 div img{
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.section4 div{
+
+}
+.section4 h5{
+  color: hsl(213, 9%, 39%);
+  font-family: 'Fraunces', serif;
+ margin-bottom: 40px;
+ letter-spacing: 0.5rem;
+ text-transform: uppercase;
+}
+.section4 .testimonials{
+  display: flex;
+  grid-gap: 15px;
+}
+.section4 .testimonials div{
+  flex: 1;
+}
+.section4 .testimonials div img{
+  margin-bottom: 20px;
+}
+.testimonials div p{
+  width: 70%;
+  margin: auto;
+  font-family: 'Fraunces', serif;
+  color: hsl(232, 10%, 55%);
+}
+.testimonials .name{
+font-weight: bold;
+color: hsl(213, 9%, 39%);
+}
+.section4 .testimonials div p:first-of-type{
+  margin-bottom: 20px;
+}
+.section5{
+  display: flex;
+}
+.section5 div{
+  flex: 1;
+  height: 400px;
+
+}
+.section5 .first{
+  background-image: url('images/desktop/image-gallery-milkbottles.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}
+.section5 .second{
+  background-image: url('images/desktop/image-gallery-orange.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+   background-size: cover;
+}
+.section5 .third{
+  background-image: url('images/desktop/image-gallery-cone.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+}
+.section5 .fourth{
+  background-image: url('images/desktop/image-gallery-sugarcubes.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+}
+.footer{
+  text-align: center;
+  background-color: hsl(168, 34%, 41%);
+  padding: 3rem 2rem;
+}
+.footer div{
+    text-align: center;
+    display: inline-block;
+}
+.footer img{
+  display: inline-block;
+  cursor: pointer;
+}
+.footer img:hover:not(.brand){
+  background-color: white;
+}
+.footer .links{
+  display: flex;
+  grid-gap: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer .links a{
+  color:hsl(167, 40%, 24%);
+  text-decoration: none;
+}
+.footer .links a:hover{
+  color:White;
+}
+.footer .icons{
+display: flex;
+grid-gap: 10px;
+  justify-content: center;
+}
+@media(max-width:600px){
+  .header .header-links{
+    display: none;
+  }
+  .header .menu{
+    display: block;
+  }
+  .header h2{
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .section1{
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .section1 div:first-child{
+    order: 2;
+    padding: 6rem 1.2rem;
+    text-align: center;
+  }
+  .section1 div:first-child p{
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .section1 div:first-child h3{
+    width: 100%;
+  }
+  .section1 div:last-child{
+    background-image: url('images/mobile/image-transform.jpg');
+    order: 1;
+    height: 400px;
+    background-position:center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section2{
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .section2 div:first-child{
+    background-image: url('images/mobile/image-stand-out.jpg');
+    order: 1;
+    height: 400px;
+    background-position:center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    order: 1;
+  }
+  .section2 div:last-child{
+    order: 2;
+    padding: 6rem 1.2rem;
+    text-align: center;
+  }
+  .section2 div:last-child h3{
+    width: 100%;
+  }
+  .section2 div:last-child p{
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .section3{
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .section3 p{
+    width: 100%;
+  }
+  .section4 .testimonials{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+  }
+  .section4{
+    padding: 3rem 1.2rem;
+  }
+  .section5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
